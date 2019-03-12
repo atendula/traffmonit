@@ -1,0 +1,30 @@
+F:\Projects\SerialReader\clientEmulator\clientEmulator\clientEmulator\bin\Debug\clientEmulator.exe.config
+F:\Projects\SerialReader\clientEmulator\clientEmulator\clientEmulator\bin\Debug\clientEmulator.exe
+F:\Projects\SerialReader\clientEmulator\clientEmulator\clientEmulator\bin\Debug\clientEmulator.pdb
+F:\Projects\SerialReader\clientEmulator\clientEmulator\clientEmulator\bin\Debug\clientEmulator.xml
+F:\Projects\SerialReader\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.vbprojResolveAssemblyReference.cache
+F:\Projects\SerialReader\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.Resources.resources
+F:\Projects\SerialReader\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.vbproj.GenerateResource.Cache
+F:\Projects\SerialReader\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.exe
+F:\Projects\SerialReader\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.xml
+F:\Projects\SerialReader\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.pdb
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\bin\Debug\clientEmulator.exe.config
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.exe
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.xml
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.pdb
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\bin\Debug\clientEmulator.exe
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\bin\Debug\clientEmulator.pdb
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\bin\Debug\clientEmulator.xml
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.vbprojResolveAssemblyReference.cache
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.Resources.resources
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.vbproj.GenerateResource.Cache
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\bin\Debug\clientEmulator.exe.config
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.exe
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.xml
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.pdb
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\bin\Debug\clientEmulator.exe
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\bin\Debug\clientEmulator.pdb
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\bin\Debug\clientEmulator.xml
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.vbprojResolveAssemblyReference.cache
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.Resources.resources
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\clientEmulator\clientEmulator\clientEmulator\obj\Debug\clientEmulator.vbproj.GenerateResource.Cache

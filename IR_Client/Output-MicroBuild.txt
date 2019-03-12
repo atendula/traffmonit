@@ -1,0 +1,4 @@
+﻿Compiling 'Final' for 'Arduino/Genuino Uno'
+Program size: 14,654 bytes (used 45% of a 32,256 byte maximum) (10.58 secs)
+Minimum Memory Usage: 806 bytes (39% of a 2048 byte maximum)
+ 

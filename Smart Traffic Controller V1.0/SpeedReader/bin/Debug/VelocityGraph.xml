@@ -1,0 +1,1705 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VelocityGraph</name>
+    </assembly>
+    <members>
+        <member name="T:VelocityGraph.Edge">
+            <summary>
+            An Edge links two vertices. Along with its key/value properties, an edge has both a directionality and a label.
+            The directionality determines which vertex is the tail vertex (out vertex) and which vertex is the head vertex (in vertex).
+            The edge label determines the type of relationship that exists between the two vertices.
+            Diagrammatically, outVertex ---label---> inVertex.
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.Edge.EdgeId">
+            <summary>
+            Gets the edge id
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.Edge.EdgeType">
+            <summary>
+            Gets the edge type
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.Edge.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:VelocityGraph.Edge"/> is equal to the current one.
+            </summary>
+            <param name="other">The object to compare with the current object.</param>
+            <returns><c>true</c> if the specified object is equal to the current object; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="P:VelocityGraph.Edge.Id">
+            <summary>
+            An identifier that is unique to its inheriting class.
+            All vertices of a graph must have unique identifiers.
+            All edges of a graph must have unique identifiers.
+            </summary>
+            <returns>the identifier of the element</returns>
+        </member>
+        <member name="P:VelocityGraph.Edge.Frontenac#Blueprints#IEdge#Label">
+            <summary>
+            Return the label associated with the edge.
+            </summary>
+            <returns>the edge label</returns>
+        </member>
+        <member name="M:VelocityGraph.Edge.GetProperty(VelocityGraph.PropertyType)">
+            <summary>
+            Gets the Value for the given Property id
+            </summary>
+            <param name="property">Property type identifier.</param>
+            <returns>Property value as <see cref="T:System.IComparable"/></returns>
+        </member>
+        <member name="M:VelocityGraph.Edge.GetProperty(System.String)">
+            <summary>
+            Return the object value associated with the provided string key.
+            If no value exists for that key, return null.
+            </summary>
+            <param name="key">the key of the key/value property</param>
+            <returns>the object value related to the string key</returns>
+        </member>
+        <member name="M:VelocityGraph.Edge.GetPropertyKeys">
+            <summary>
+            Return all the keys associated with the element.
+            </summary>
+            <returns>the set of all string keys associated with the element</returns>
+        </member>
+        <member name="M:VelocityGraph.Edge.Frontenac#Blueprints#IEdge#GetVertex(Frontenac.Blueprints.Direction)">
+            <summary>
+            Return the tail/out or head/in vertex.
+            ArgumentException is thrown if a direction of both is provided
+            </summary>
+            <param name="direction">whether to return the tail/out or head/in vertex</param>
+            <returns>the tail/out or head/in vertex</returns>
+        </member>
+        <member name="P:VelocityGraph.Edge.Tail">
+            <summary>
+            Gets the tail vertex
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.Edge.Head">
+            <summary>
+            Gets the head vertex
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.Edge.GetEdgePeer(VelocityGraph.Vertex)">
+            <summary>
+            Gets the other end for the given edge.
+            </summary>
+            <param name="vertex">A vertex, it must be one of the ends of the edge.</param>
+            <returns>The other end of the edge.</returns>
+        </member>
+        <member name="M:VelocityGraph.Edge.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.Edge.Remove">
+            <summary>
+            Remove the edge from the graph.
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.Edge.RemoveProperty(System.String)">
+            <summary>
+            Un-assigns a key/value property from the edge.
+            The object value of the removed property is returned.
+            </summary>
+            <param name="key">the key of the property to remove from the edge</param>
+            <returns>the object value associated with that key prior to removal</returns>
+        </member>
+        <member name="M:VelocityGraph.Edge.SetProperty(VelocityGraph.PropertyType,System.IComparable)">
+            <summary>
+            Sets the value for a property
+            </summary>
+            <param name="property">The property to set</param>
+            <param name="v">the value</param>
+        </member>
+        <member name="M:VelocityGraph.Edge.SetProperty(System.String,System.Object)">
+            <summary>
+            Assign a key/value property to the edge.
+            If a value already exists for this key, then the previous key/value is overwritten.
+            </summary>
+            <param name="key">the string key of the property</param>
+            <param name="value">the object value o the property</param>
+        </member>
+        <member name="M:VelocityGraph.Edge.SetProperty``1(System.String,``0)">
+            <summary>
+            Assign a key/value property to the edge.
+            If a value already exists for this key, then the previous key/value is overwritten.
+            </summary>
+            <typeparam name="T">Type of the value</typeparam>
+            <param name="key">the string key of the property</param>
+            <param name="value">the object value o the property</param>
+        </member>
+        <member name="M:VelocityGraph.Edge.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:VelocityGraph.Exceptions.EdgeDoesNotExistException">
+            <summary>
+            Exception thrown when a edge id is specified for an edge type and the edge does not exist.
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.Exceptions.EdgeTypeDoesNotExistException">
+            <summary>
+            Exception thrown when a edge type id is specified and the edge type does not exist.
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.Exceptions.EdgeTypeInUseException">
+            <summary>
+            Exception thrown when at least one edge exist for a edge type and attempting to remove the edge type.
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.Exceptions.NamespaceDoc">
+            <summary>    
+            The <see cref="N:VelocityGraph.Exceptions"/> namespace contains exception classes for the VelocityGraph Graph Database.   
+            </summary>      
+        </member>
+        <member name="T:VelocityGraph.Exceptions.InvalidHeadVertexTypeException">
+            <summary>
+            Exception thrown when the type of the head vertex doesn't match the required head VertexType of an EdgeType.
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.Exceptions.InvalidTailVertexTypeException">
+            <summary>
+            Exception thrown when the type of the tail vertex doesn't match the required tail VertexType of an EdgeType.
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.Exceptions.PropertyTypeInUseException">
+            <summary>
+            Exception thrown when at least one vertex or edge uses a property type when attempting to remove the property type
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.Exceptions.InvalidPropertyIdException">
+            <summary>
+            Exception thrown when a type id is specified for a property that does not exist.
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.Exceptions.InvalidTypeIdException">
+            <summary>
+            Exception thrown when a type id is specified for a type that does not exist.
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.Exceptions.VertexAllreadyExistException">
+            <summary>
+            Exception thrown when a vertex id is specified for a vertex type and the vertex allready exist.
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.Exceptions.VertexDoesNotExistException">
+            <summary>
+            Exception thrown when a vertex id is specified for a vertex type and the vertex does not exist.
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.Exceptions.VertexTypeDoesNotExistException">
+            <summary>
+            Exception thrown when a vertex type id is specified and the vertex type does not exist.
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.Exceptions.VertexTypeInUseException">
+            <summary>
+            Exception thrown when at least one vertex exist for a vertex type and attempting to remove the vertex type.
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.PropertyTypeNoDuplicateValues`1">
+            <summary>
+            Used with string property type values. Avoids storing duplicate string values.
+            </summary>
+            <typeparam name="T">always <see cref="T:System.String"/> for now</typeparam>
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeNoDuplicateValues`1.GetPropertyValue(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeNoDuplicateValues`1.SetPropertyValueX(System.Int32,`0)">
+            <summary>
+            Internally sets a property value
+            </summary>
+            <param name="element">element id</param>
+            <param name="aValue">value</param>
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeNoDuplicateValues`1.SetPropertyValue(System.Int32,System.Int32,System.IComparable)">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeNoDuplicateValues`1.GetPropertyVertex(`0,System.Boolean,System.Boolean)">
+            <summary>
+            Try to find a <see cref="T:VelocityGraph.Vertex"/> with a given property value.
+            </summary>
+            <param name="value">The property value to look for</param>
+            <param name="polymorphic">If true, also look for property value matching vertices of property <see cref="T:VelocityGraph.VertexType"/> sub classes</param>
+            <param name="errorIfNotFound">If true, signal an error if no matching <see cref="T:VelocityGraph.Vertex"/> found</param>
+            <returns>A matching Vertex</returns>
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeNoDuplicateValues`1.GetPropertyVertex(System.IComparable,System.Boolean,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeNoDuplicateValues`1.GetPropertyVertices(`0,System.Boolean)">
+            <summary>
+            Try to find all <see cref="T:VelocityGraph.Vertex"/> with a given property value.
+            </summary>
+            <param name="value">The property value to look for</param>
+            <param name="polymorphic">If true, also look for property value matching vertices of property <see cref="T:VelocityGraph.VertexType"/> sub classes</param>
+            <returns>Enumeration of matching vertices</returns>
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeNoDuplicateValues`1.GetPropertyVertices(System.IComparable,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeNoDuplicateValues`1.GetPropertyEdge(`0)">
+            <summary>
+            Try to find an <see cref="T:VelocityGraph.Edge"/> with a given property value.
+            </summary>
+            <param name="value">the property value to look for</param>
+            <returns>An edge with a matching property value</returns>
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeNoDuplicateValues`1.GetPropertyEdges(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeNoDuplicateValues`1.GetPropertyEdges(System.IComparable)">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeNoDuplicateValues`1.GetPropertyEdge(System.IComparable)">
+            <inheritdoc />
+        </member>
+        <member name="P:VelocityGraph.PropertyTypeNoDuplicateValues`1.ValueType">
+            <inheritdoc />
+        </member>
+        <member name="T:VelocityGraph.EdgeType">
+            <summary>
+            All edges have a type that is identified as a EdgeType. Each EdgeType have a name, can be persisted and tracks all edges of its type. The edge type also knows about properties used by its type.
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.#ctor(System.Int32,System.String,VelocityGraph.VertexType,VelocityGraph.VertexType,System.Boolean,VelocityGraph.EdgeType,VelocityGraph.Graph)">
+            <summary>
+            Creates a new edge type.
+            </summary>
+            <param name="aTypeId">The id to use for the new edge type</param>
+            <param name="aTypeName">A type name to use</param>
+            <param name="tailType">Restrict tail vertex to a certain vertex type</param>
+            <param name="headType">Restrict head vertex to a certain vertex type</param>
+            <param name="birectional">Is this edge type bidirectional (going both ways)</param>
+            <param name="baseType">A base type can be specified</param>
+            <param name="graph">The owning graph</param>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.CompareTo(VelocityGraph.EdgeType)">
+            <summary>
+            Compares two EdgeType objects by id
+            </summary>
+            <param name="obj">The object to compare with</param>
+            <returns>a negative number if less, 0 if equal or else a positive number</returns>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.Compare(VelocityGraph.EdgeType,VelocityGraph.EdgeType)">
+            <summary>
+            Compares two edge types by id
+            </summary>
+            <param name="aId">edge type 1</param>
+            <param name="bId">edge type 2</param>
+            <returns>0 if edge types are equal, -1 if aId is less than bId; otherwise 1</returns>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.Equals(VelocityGraph.EdgeType,VelocityGraph.EdgeType)">
+            <summary>
+            Compares two edge types by id
+            </summary>
+            <param name="x">edge type 1</param>
+            <param name="y">edge type 2</param>
+            <returns><c>true</c> if the specified objects are equal; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="P:VelocityGraph.EdgeType.Directed">
+            <summary>
+            Is Directed if edge type is not birectionalal
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.GetEdge(System.Int32)">
+            <summary>
+            Gets an edge given an edge id. Throws if no such edge exist.
+            </summary>
+            <param name="edgeId">The id of the edge</param>
+            <returns>The edge with matching id if it exists</returns>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.GetEdges(System.Boolean)">
+            <summary>
+            Enumerates all edges of this type
+            </summary>
+            <param name="polymorphic">If true, also include all edges of sub types</param>
+            <returns>Enumeration of edges of this type</returns>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.CountEdges">
+            <summary>
+            Get a count of existing edges of this type
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.GetEdge(System.Int32,VelocityGraph.Vertex,VelocityGraph.Vertex)">
+            <summary>
+            Get an edge for a given id
+            </summary>
+            <param name="edgeId">Id of edge</param>
+            <param name="tailVertex">the tail vertex of the edge</param>
+            <param name="headVertex">the head vertex of the edge</param>
+            <returns></returns>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.GetHashCode(VelocityGraph.EdgeType)">
+            <summary>
+            Get a hash code for an edge tyepe based on type id
+            </summary>
+            <param name="t">edge type to get hash code for</param>
+            <returns>Hash code of an edge type</returns>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.GetPropertyKeys">
+            <summary>
+            Return all the keys associated with the edge type.
+            </summary>
+            <returns>the set of all string keys associated with the edge type</returns>
+        </member>
+        <member name="P:VelocityGraph.EdgeType.HeadType">
+            <summary>
+            Gets the Head VertexType of the edge (might not be set)
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.NewProperty(System.String,VelocityGraph.DataType,VelocityGraph.PropertyKind)">
+            <summary>
+            Creates a new Property. 
+            </summary>
+            <param name="name">Unique name for the new Property.</param>
+            <param name="dt">Data type for the new Property.</param>
+            <param name="kind">Property kind.</param>
+            <returns>a Property.</returns>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.NewProperty(System.String,System.Object,VelocityGraph.PropertyKind)">
+            <summary>
+            Creates a new Property. 
+            </summary>
+            <param name="name">Unique name for the new Property.</param>
+            <param name="value">Object guiding the type of the property.</param>
+            <param name="kind">Property kind.</param>
+            <returns>a Property.</returns>
+        </member>
+        <member name="P:VelocityGraph.EdgeType.MyGraph">
+            <summary>
+            <see cref="T:VelocityGraph.Graph"/> for which this <see cref="T:VelocityGraph.EdgeType"/> belongs to
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.NewEdge(VelocityGraph.Vertex,VelocityGraph.Vertex)">
+            <summary>
+            Create an edge between tail and head vertex
+            </summary>
+            <param name="tail">selected tail vertex</param>
+            <param name="head">selected head vertex</param>
+            <returns>a new edge</returns>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.Remove">
+            <summary>
+            Removes this <see cref="T:VelocityGraph.EdgeType"/> from a graph. An exception is thrown if the <see cref="T:VelocityGraph.EdgeType"/> is in use.
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.RemoveEdge(VelocityGraph.Edge)">
+            <summary>
+            Removing an edge from this edge type
+            </summary>
+            <param name="edge">an edge to remove</param>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.NewEdgeX(VelocityDb.Collection.WeakReferenceList{VelocityGraph.PropertyType},VelocityGraph.PropertyType,System.Object,VelocityGraph.PropertyType,System.Object,VelocityDb.Session.SessionBase)">
+            <summary>
+            Not yet implemented
+            </summary>
+            <param name="propertyType"></param>
+            <param name="tailAttr"></param>
+            <param name="tailV"></param>
+            <param name="headAttr"></param>
+            <param name="headV"></param>
+            <param name="session"></param>
+            <returns></returns>
+        </member>
+        <member name="P:VelocityGraph.EdgeType.TypeId">
+            <summary>
+            Gets the id of the edge type
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.EdgeType.TypeName">
+            <summary>
+            Gets the name of the this edge type
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.FindProperty(System.String)">
+            <summary>
+            Gets the property type given a property type name
+            </summary>
+            <param name="name">a property type name</param>
+            <returns>a looked up property type or null if no such property type exist</returns>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.GetPropertyValue(System.Int32,VelocityGraph.PropertyType)">
+            <summary>
+            Gets a property value given an edge id and a property type
+            </summary>
+            <param name="elementId">an edge id</param>
+            <param name="property">a property type</param>
+            <returns>a property value</returns>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.SetPropertyValue(System.Int32,VelocityGraph.PropertyType,System.IComparable)">
+            <summary>
+            Sets an edge property given an edge id, property type and a value
+            </summary>
+            <param name="elementId">an edge id</param>
+            <param name="property">a property type</param>
+            <param name="v">a value</param>
+        </member>
+        <member name="P:VelocityGraph.EdgeType.SubTypes">
+            <summary>
+            Sub types of this <see cref="T:VelocityGraph.EdgeType"/> 
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.EdgeType.TailType">
+            <summary>
+            Gets the Tail VertexType of the edge (might not be set)
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.EdgeType.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.EdgeType.Unpersist(VelocityDb.Session.SessionBase)">
+            <inheritdoc />
+        </member>
+        <member name="P:VelocityGraph.EdgeType.Unrestricted">
+            <summary>
+            Is this edge type restricted to a certain head and tail vertex type?
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.Element">
+            <summary>
+            Base class for Edge and Vertex
+            </summary>
+        </member>
+        <member name="F:VelocityGraph.Element.m_id">
+            <summary>
+            The id of an element
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.Element.#ctor(System.Int32,VelocityGraph.Graph)">
+            <summary>
+            Constructor setting the id and graph reference
+            </summary>
+            <param name="id">Assigned id</param>
+            <param name="graph">The owning graph</param>
+        </member>
+        <member name="P:VelocityGraph.Element.Graph">
+            <summary>
+            Access to owning graph
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.Element.SetProperty``1(System.String,``0)">
+            <summary>
+            Assign a key/value property to the element.
+            If a value already exists for this key, then the previous key/value is overwritten.
+            </summary>
+            <typeparam name="T">Type of the value</typeparam>
+            <param name="key">the string key of the property</param>
+            <param name="value">the T value o the property</param>
+        </member>
+        <member name="M:VelocityGraph.Element.GetHashCode">
+            <summary>
+            Use id as hash code
+            </summary>
+            <returns>The hash code given by id</returns>
+        </member>
+        <member name="T:VelocityGraph.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.Vertex">
+            <summary>
+            A vertex maintains pointers to both a set of incoming and outgoing edges.
+            The outgoing edges are those edges for which the vertex is the tail.
+            The incoming edges are those edges for which the vertex is the head.
+            Diagrammatically, ---inEdges---> vertex ---outEdges--->
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.Vertex.#ctor(VelocityGraph.Graph,VelocityGraph.VertexType,System.Int32)">
+            <summary>
+            Normally you should use <see cref="M:VelocityGraph.VertexType.GetVertex(System.Int32,System.Boolean,System.Boolean)"/> but if you need a reference to a Vertex that has no yet been created, this constructor may be used (but know what you are doing!)
+            </summary>
+            <param name="g">the owning graph</param>
+            <param name="eType">the type of the Vertex</param>
+            <param name="eId">the Id of the Vertex</param>
+        </member>
+        <member name="M:VelocityGraph.Vertex.AddEdge(System.String,Frontenac.Blueprints.IVertex)">
+            <summary>
+            Add an edge from this Vertex to inVertex of edge type looked up from label, if edge type does not yet exist it is created.
+            </summary>
+            <param name="label">The type of edge to create</param>
+            <param name="inVertex">The head of the new edge</param>
+            <returns>the new edge</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.AddEdge(System.Object,System.String,Frontenac.Blueprints.IVertex)">
+            <summary>
+            Add an edge from this Vertex to inVertex of edge type looked up from label, if edge type does not yet exist it is created.
+            </summary>
+            <param name="edgeId">If not null, this must be a UInt32 to be used as edge id - NOTE: not yet implemented usage</param>
+            <param name="label">The type of edge to create</param>
+            <param name="inVertex">The head of the new edge</param>
+            <returns>the new edge</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.AddEdge(VelocityGraph.EdgeType,VelocityGraph.Vertex)">
+            <summary>
+            Add an edge from this Vertex to inVertex of edge type.
+            </summary>
+            <param name="edgeType">The type of edge to add</param>
+            <param name="head">The head of the new edge</param>
+            <returns>the new edge</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.Equals(System.Object)">
+            <summary>
+            Determines whether the specified <see cref="T:VelocityGraph.Vertex"/> is equal to the current one.
+            </summary>
+            <param name="other">The object to compare with the current object.</param>
+            <returns><c>true</c> if the specified object is equal to the current object; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="P:VelocityGraph.Vertex.Id">
+            <summary>
+            An identifier that is unique to its inheriting class.
+            All vertices of a graph must have unique identifiers.
+            All edges of a graph must have unique identifiers.
+            </summary>
+            <returns>the identifier of the element</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.GetNumberOfEdges(VelocityGraph.EdgeType,Frontenac.Blueprints.Direction)">
+            <summary>
+            Gets the number of edges from or to this vertex and for the given edge type. 
+            </summary>
+            <param name="edgeType">an EdgeType</param>
+            <param name="dir">direction, one of: Out, In, Both</param>
+            <returns>The number of edges.</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.GetNumberOfEdges(VelocityGraph.EdgeType,VelocityGraph.Vertex,Frontenac.Blueprints.Direction)">
+            <summary>
+            Gets the number of edges from or to this vertex for the given edge type and the given other Vertex. 
+            </summary>
+            <param name="edgeType">an EdgeType</param>
+            <param name="headVertex">Vertex at other end of the edge</param>
+            <param name="dir">direction, one of: Out, In, Both</param>
+            <returns>The number of edges.</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.GetProperty(System.String)">
+            <summary>
+            Return the object value associated with the provided string key.
+            If no value exists for that key, return null.
+            </summary>
+            <param name="key">the key of the key/value property</param>
+            <returns>the object value related to the string key</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.GetPropertyKeys">
+            <summary>
+            Return all the keys associated with the vertex.
+            </summary>
+            <returns>the set of all string keys associated with the vertex</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.GetProperty(VelocityGraph.PropertyType)">
+            <summary>
+            Gets the Value for the given Property id
+            </summary>
+            <param name="property">Property type identifier.</param>
+            <returns>the property value</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.GetEdges(VelocityGraph.EdgeType,Frontenac.Blueprints.Direction)">
+            <summary>
+            Selects all edges from or to this vertex and for the given edge type. 
+            </summary>
+            <param name="edgeType">the id of an EdgeType</param>
+            <param name="dir">direction, one of: Out, In, Both</param>
+            <returns>a set of Edge</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.GetEdges(Frontenac.Blueprints.Direction,System.String[])">
+            <summary>
+            Return the edges incident to the vertex according to the provided direction and edge labels.
+            </summary>
+            <param name="direction">the direction of the edges to retrieve</param>
+            <param name="labels">the labels of the edges to retrieve</param>
+            <returns>an IEnumerable of incident edges</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.Vertex.GetOutEdges(System.String[])">
+            <summary>
+            Enumerates all outgoing edges of selected edge types
+            </summary>
+            <param name="labels">Array of edge type names to find edges for or if empty, get all outgoing edges from this vertex type.</param>
+            <returns>Enumeration of edges</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.GetVertices(Frontenac.Blueprints.Direction,System.String[])">
+            <summary>
+            Return the vertices adjacent to the vertex according to the provided direction and edge labels.
+            This method does not remove duplicate vertices (i.e. those vertices that are connected by more than one edge).
+            </summary>
+            <param name="direction">the direction of the edges of the adjacent vertices</param>
+            <param name="labels">the labels of the edges of the adjacent vertices</param>
+            <returns>an IEnumerable of adjacent vertices</returns>
+        </member>
+        <member name="P:VelocityGraph.Vertex.VertexId">
+            <summary>
+            Gets the unique id of a vertex
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.Vertex.VertexType">
+            <summary>
+            Gets the vertex type of this Vertex
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.Vertex.Traverse(VelocityGraph.EdgeType,Frontenac.Blueprints.Direction)">
+            <summary>
+            Selects all neighbor Vertices from or to this vertex and for the given edge type.
+            </summary>
+            <param name="etype">Edge type identifier.</param>
+            <param name="dir">Direction to traverse edges</param>
+            <returns>Dictionary of vertex key with edge path(s) to vertex</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.Traverse(Frontenac.Blueprints.Direction,System.Collections.Generic.ISet{VelocityGraph.EdgeType})">
+            <summary>
+            Selects all neighbor Vertices from or to this vertex and for the given edge types.
+            </summary>
+            <param name="dir">Direction to traverse edges</param>
+            <param name="edgeTypesToTraverse">the type of edges to follow, by default null which means follow all edge types</param>
+            <returns>All paths to neighbor vertices </returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.Traverse(System.Int32,System.Boolean,Frontenac.Blueprints.Direction,VelocityGraph.Vertex,System.Collections.Generic.ISet{VelocityGraph.EdgeType},System.Collections.Generic.ISet{VelocityGraph.VertexType},System.Collections.Generic.ISet{VelocityGraph.VertexType},System.Collections.Generic.ISet{VelocityGraph.Vertex},System.Collections.Generic.ISet{VelocityGraph.Vertex},System.Collections.Generic.ISet{VelocityGraph.Edge},System.Collections.Generic.ISet{VelocityGraph.Edge},System.Collections.Generic.ISet{VelocityGraph.PropertyType},System.Collections.Generic.ISet{VelocityGraph.PropertyType},System.Collections.Generic.ISet{VelocityGraph.PropertyType},System.Collections.Generic.ISet{VelocityGraph.PropertyType},System.Func{VelocityGraph.Vertex,System.Boolean},System.Func{VelocityGraph.Edge,System.Boolean},System.Func{System.Collections.Generic.List{VelocityGraph.Edge},System.Boolean})">
+            <summary>
+            Traverses graph from this Vertex to a target Vertex using Breadth-first search like in Dijkstra's algorithm
+            </summary>
+            <param name="maxHops">maximum number of hops from this Vertex</param>
+            <param name="all">find or not find all paths to goal Vertex</param>
+            <param name="dir">Direction to traverse edges</param>
+            <param name="toVertex">the goal Vertex. If null, finds all paths</param>
+            <param name="edgeTypesToTraverse">the type of edges to follow, by default null which means follow all edge types</param>
+            <param name="includedVertexTypes">the type of vertices's to follow, by default null which means follow all vertex types</param>
+            <param name="excludedVertexTypes">the type of vertices's not to follow, by default null</param>
+            <param name="includedVertices">one or more Vertex instances that MUST be in the path for the path to be traversed i.e. if a path does exist
+            to the specified toVertex, but does not include all the instances in includedVertices set, the Traverse method will exclude that path</param>
+            <param name="excludedVertices">one or more Vertex instances that MUST NOT be in the path for the path to be traversed i.e. if a path does exist
+            to the specified toVertex, but does include any of the instances in includedVertices set, the Traverse method will exclude that path</param>
+            <param name="includedEdges">one or more Edge instances that MUST be in the path for the path to be traversed i.e. if a path does exist
+            to the specified toVertex, but does not include all the instances in includedEdges set, the Traverse method will exclude that path</param>
+            <param name="excludedEdges">one or more Edge instances that MUST NOT be in the path for the path to be traversed i.e. if a path does exist
+            to the specified toVertex, but does include any of the instances in includedEdges set, the Traverse method will exclude that path</param>
+            <param name="includedVertexProperty">One or more Vertex property types that MUST be in the path for the path to be accepted i.e. if a path does exist
+            to the specified toVertex, but does not include all of the Vertex properties in the set, the Traverse method will exclude that path</param>
+            <param name="excludedVertexProperty">One or more Vertex property types that MUST NOT be in the path for the path to be accepted i.e. if a path does exist
+            to the specified toVertex, but does include any of the Vertex properties in the set, the Traverse method will exclude that path</param>
+            <param name="includedEdgeProperty">One or more Vertex property types that MUST be in the path for the path to be accepted i.e. if a path does exist
+            to the specified toVertex, but does not include all of the Vertex properties in the set, the Traverse method will exclude that path</param>
+            <param name="excludedEdgeProperty">One or more Edge property types that MUST NOT be in the path for the path to be accepted i.e. if a path does exist
+            to the specified toVertex, but does include any of the Edge properties in the set, the Traverse method will exclude that path</param>
+            <param name="validateVertex">A function that will be called before accepting a Vertex in path to toVertex. If function returns true then this vertex is accepted in path; otherwise vertex is rejected</param>
+            <param name="validateEdge">A function that will be called before accepting an Edge in path to toVertex. If function returns true then this Edge is accepted in path; otherwise edge is rejected</param>
+            <param name="validateEdges">A function that will be called before accepting a candidate Edges list in path to toVertex. If function returns true then this Edge list is accepted in path; otherwise edge list is rejected</param>
+            <returns>List of paths to goal Vertex</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.Query">
+            <summary>
+            Uses <see cref="T:Frontenac.Blueprints.Util.DefaultVertexQuery"/>
+            </summary>
+            <returns>Query interface</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.Remove">
+            <summary>
+            Removes this <see cref="T:VelocityGraph.Vertex"/> from the <see cref="T:VelocityGraph.Graph"/>  
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.Vertex.RemoveProperty(System.String)">
+            <summary>
+            Un-assigns a key/value property from the vertex.
+            The object value of the removed property is returned.
+            </summary>
+            <param name="key">the key of the property to remove from the vertex</param>
+            <returns>the object value associated with that key prior to removal</returns>
+        </member>
+        <member name="M:VelocityGraph.Vertex.SetProperty(VelocityGraph.PropertyType,System.IComparable)">
+            <summary>
+            Assign a key/value property to the vertex.
+            If a value already exists for this key, then the previous key/value is overwritten. 
+            </summary>
+            <param name="property">The property type to set</param>
+            <param name="v">the property value</param>
+        </member>
+        <member name="M:VelocityGraph.Vertex.SetProperty(System.String,System.Object)">
+            <summary>
+            Assign a key/value property to the vertex.
+            If a value already exists for this key, then the previous key/value is overwritten.
+            </summary>
+            <param name="key">the string key of the property</param>
+            <param name="value">the object value of the property</param>
+        </member>
+        <member name="M:VelocityGraph.Vertex.SetProperty``1(System.String,``0)">
+            <summary>
+            Assign a key/value property to the vertex.
+            If a value already exists for this key, then the previous key/value is overwritten.
+            </summary>
+            <typeparam name="T">Type of the value</typeparam>
+            <param name="key">the string key of the property</param>
+            <param name="value">the object value o the property</param>
+        </member>
+        <member name="M:VelocityGraph.Vertex.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:VelocityGraph.NamespaceDoc">
+            <summary>    
+            The <see cref="N:VelocityGraph"/> namespace contains classes for the VelocityGraph Graph Database.   
+            </summary>      
+        </member>
+        <member name="T:VelocityGraph.VertexType">
+            <summary>
+            All vertices have a type that is identified as a VertexType. Each VertexType have a name, can be persisted and tracks all vertices of its type. The vertex type also knows about properties used by its type.
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.VertexType.EdgeTypes">
+            <summary>
+            All edge types connected with this vertex type.
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.VertexType.edgeVertexId(VelocityGraph.Edge,System.Int32)">
+            <summary>
+            Gets a combined <see cref="T:VelocityGraph.Edge"/> id and <see cref="T:VelocityGraph.Vertex"/> id
+            </summary>
+            <param name="edge">Get edge id from this edge</param>
+            <param name="vertexId">A <see cref="T:VelocityGraph.Vertex"/> id</param>
+            <returns>the combined ids</returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.GetVertex(System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Instantiates a Vertex if it exist
+            </summary>
+            <param name="vertexId">id of Vertex we are looking for</param>
+            <param name="polymorphic">If true and id isn't found in this VertexType continue search into sub types</param>
+            <param name="errorIfNotFound">Indicate what to do if Vertex does not exist</param>
+            <returns>A Vertex or null</returns>
+        </member>
+        <member name="P:VelocityGraph.VertexType.MyGraph">
+            <summary>
+            <see cref="T:VelocityGraph.Graph"/> for which this <see cref="T:VelocityGraph.VertexType"/> belongs to
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.VertexType.Remove">
+            <summary>
+            Removes this <see cref="T:VelocityGraph.VertexType"/> from a graph. An exception is thrown if the <see cref="T:VelocityGraph.VertexType"/> is in use.
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.VertexType.NewVertex(System.Int32)">
+            <summary>
+            Creates a new Vertex
+            </summary>
+            <param name="vId">Optionally provide the Vertex id to use.</param>
+            <returns>The newly created <see cref="T:VelocityGraph.Vertex"/></returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.Traverse(VelocityGraph.Vertex,VelocityGraph.EdgeType,Frontenac.Blueprints.Direction)">
+            <summary>
+            Selects all neighbor Vertices from or to this vertex and for the given edge type.
+            </summary>
+            <param name="vertex1">the start Vertex</param>
+            <param name="etype">the type of edges to follow</param>
+            <param name="dir">Direction.</param>
+            <returns>Dictionary of vertex key with edge path(s) to vertex</returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.NewProperty(System.String,VelocityGraph.DataType,VelocityGraph.PropertyKind)">
+            <summary>
+            Creates a new Property. 
+            </summary>
+            <param name="name">Unique name for the new Property.</param>
+            <param name="dt">Data type for the new Property.</param>
+            <param name="kind">Property kind.</param>
+            <returns>Unique Property identifier.</returns>
+        </member>
+        <member name="P:VelocityGraph.VertexType.TypeId">
+            <summary>
+            Get the unique id of the vertex type.
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.VertexType.FindProperty(System.String)">
+            <summary>
+            Gets the associated <see cref="T:VelocityGraph.PropertyType"/> given a propert type name or null if such property type does't exist.
+            </summary>
+            <param name="name">A property type name</param>
+            <returns>The property type or null</returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.GetPropertyKeys">
+            <summary>
+            Return all the keys associated with the vertex type.
+            </summary>
+            <returns>the set of all string keys associated with the vertex type</returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.GetPropertyTypes">
+            <summary>
+            Return all the property types associated with vertex type.
+            </summary>
+            <returns>the set of property types associated with the vertex type</returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.GetEdges(VelocityGraph.EdgeType,Frontenac.Blueprints.Direction)">
+            <summary>
+            Enumerates edges connected wih this vertex type
+            </summary>
+            <param name="etype">A type of edge type to look for</param>
+            <param name="dir">Direction of edge</param>
+            <returns></returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.GetEdges(VelocityGraph.Vertex,Frontenac.Blueprints.Direction)">
+            <summary>
+            Get all edges found from a given <see cref="T:VelocityGraph.Vertex"/>
+            </summary>
+            <param name="vertex1">A <see cref="T:VelocityGraph.Vertex"/> id</param>
+            <param name="dir">follow edges in this direction</param>
+            <returns>an enumeration of edges</returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.GetEdges(VelocityGraph.EdgeType,VelocityGraph.Vertex,Frontenac.Blueprints.Direction,VelocityGraph.Vertex)">
+            <summary>
+            Get all edges found between two vertices
+            </summary>
+            <param name="edgeType">Restrict to this type of edge</param>
+            <param name="vertex1">Start <see cref="T:VelocityGraph.Vertex"/></param>
+            <param name="dir">Follow edges in this direction</param>
+            <param name="vertex2">End <see cref="T:VelocityGraph.Vertex"/></param>
+            <returns>An enumeration of edges</returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.GetNumberOfEdges(VelocityGraph.EdgeType,Frontenac.Blueprints.Direction)">
+            <summary>
+            Get the number of edges of a certain type that can be found and an edge direction
+            </summary>
+            <param name="etype">Use this type of edge</param>
+            <param name="dir">Edge direction to follow</param>
+            <returns>Number of edges found</returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.GetTopNumberOfEdges(VelocityGraph.EdgeType,System.Int32,Frontenac.Blueprints.Direction)">
+            <summary>
+            Get the top vertices with the most number of edges of the given edge type
+            </summary>
+            <param name="etype">The edge type to look for</param>
+            <param name="howMany">How many top ones to collect</param>
+            <param name="dir">What end of edges to look at</param>
+            <returns>Array of Vertices with the most edges of the given edge type</returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.GetNumberOfEdges(VelocityGraph.EdgeType,System.Int32,Frontenac.Blueprints.Direction)">
+            <summary>
+            Get the number of edges of a certain type that can be found associated with a vertex id and an edge direction
+            </summary>
+            <param name="etype">Type of edges to look for</param>
+            <param name="vertexId">Id of a <see cref="T:VelocityGraph.Vertex"/></param>
+            <param name="dir">Edge direction to use</param>
+            <returns>The number of edges found</returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.GetNumberOfEdges(VelocityGraph.EdgeType,System.Int32,System.Int32,Frontenac.Blueprints.Direction)">
+            <summary>
+            Get the number of edges of a certain type that can be found associated with a vertex id, another vertex id at other end and an edge direction
+            </summary>
+            <param name="etype">Type of edges to look for</param>
+            <param name="vertexId">Id of a <see cref="T:VelocityGraph.Vertex"/></param>
+            <param name="vertexId2">Id of a <see cref="T:VelocityGraph.Vertex"/></param>
+            <param name="dir">Edge direction to use</param>
+            <returns>The number of edges found</returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.GetVertices(System.Boolean)">
+            <summary>
+            Enumerates all vertices for the given type
+            </summary>
+            <param name="polymorphic">If true, also include all vertices of sub types of this VertexType</param>
+            <returns>Enumeration of vertices</returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.CountVertices">
+            <summary>
+            Count of vertcies
+            </summary>
+            <returns>the number of verices that exist for this type in this <see cref="T:VelocityGraph.Graph"/></returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.GetVerticeIds">
+            <summary>
+            Get existing <see cref="T:VelocityGraph.Vertex"/> ids for this type
+            </summary>
+            <returns>An enumeration of vertex ids</returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.GetVertices(VelocityGraph.EdgeType,VelocityGraph.Vertex,Frontenac.Blueprints.Direction)">
+            <summary>
+            Get an enumeration of existing vertices of this type found by following an edge type
+            </summary>
+            <param name="etype">Edge type to follow</param>
+            <param name="vertex1">Vertex to start from</param>
+            <param name="dir">Edge direction to follow</param>
+            <returns>an enumeration of vertices</returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.RemoveVertex(VelocityGraph.Vertex)">
+            <summary>
+            Removes a vertex from this type and graph
+            </summary>
+            <param name="vertex">The vertex to remove</param>
+        </member>
+        <member name="M:VelocityGraph.VertexType.GetPropertyValue(System.Int32,VelocityGraph.PropertyType)">
+            <summary>
+            Get the property value for a <see cref="T:VelocityGraph.Vertex"/>
+            </summary>
+            <param name="vertexId">Id of <see cref="T:VelocityGraph.Vertex"/></param>
+            <param name="propertyType">Type of property</param>
+            <returns></returns>
+        </member>
+        <member name="M:VelocityGraph.VertexType.SetPropertyValue(System.Int32,VelocityGraph.PropertyType,System.IComparable)">
+            <summary>
+            Sets a property value
+            </summary>
+            <param name="vertexId">Id of <see cref="T:VelocityGraph.Vertex"/> for which to set property value</param>
+            <param name="propertyType">The type of property to set</param>
+            <param name="v">the value to set the property to</param>
+        </member>
+        <member name="P:VelocityGraph.VertexType.SubTypes">
+            <summary>
+            Sub types of this <see cref="T:VelocityGraph.VertexType"/> 
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.VertexType.TypeName">
+            <summary>
+            Gets the name of this <see cref="T:VelocityGraph.VertexType"/> 
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.VertexType.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.VertexType.Unpersist(VelocityDb.Session.SessionBase)">
+            <inheritdoc />
+        </member>
+        <member name="T:VelocityGraph.PropertyTypeT`1">
+            <summary>
+            Keeper of <see cref="T:VelocityGraph.Edge"/> and <see cref="T:VelocityGraph.Vertex"/> properties
+            </summary>
+            <typeparam name="T">The type of value used by the property type</typeparam>
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeT`1.GetPropertyValueT(System.Int32,`0@)">
+            <summary>
+            Internally gets a property value
+            </summary>
+            <param name="oid">element id</param>
+            <param name="pv">a value</param>
+            <returns></returns>
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeT`1.HasPropertyValue(System.Int32)">
+            <summary>
+            Does a certain element (Edge/Vertex) have a property value for this property type
+            </summary>
+            <param name="elementId">element id of element</param>
+            <returns></returns>
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeT`1.SetPropertyValueX(System.Int32,`0)">
+            <summary>
+            Internally sets a property value
+            </summary>
+            <param name="element">element id</param>
+            <param name="aValue">value</param>
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeT`1.GetPropertyVertex(`0,System.Boolean,System.Boolean)">
+            <summary>
+            Try to find a <see cref="T:VelocityGraph.Vertex"/> with a given property value.
+            </summary>
+            <param name="value">The property value to look for</param>
+            <param name="polymorphic">If true, also look for property value matching vertices of property <see cref="T:VelocityGraph.VertexType"/> sub classes</param>
+            <param name="errorIfNotFound">If true, signal an error if no matching <see cref="T:VelocityGraph.Vertex"/> found</param>
+            <returns>A matching Vertex</returns>
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeT`1.GetPropertyVertex(System.IComparable,System.Boolean,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeT`1.GetPropertyVertices(`0,System.Boolean)">
+            <summary>
+            Try to find all <see cref="T:VelocityGraph.Vertex"/> with a given property value.
+            </summary>
+            <param name="value">The property value to look for</param>
+            <param name="polymorphic">If true, also look for property value matching vertices of property <see cref="T:VelocityGraph.VertexType"/> sub classes</param>
+            <returns>Enumeration of matching vertices</returns>
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeT`1.GetPropertyVertices(System.IComparable,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeT`1.GetPropertyEdge(`0)">
+            <summary>
+            Try to find an <see cref="T:VelocityGraph.Edge"/> with a given property value.
+            </summary>
+            <param name="value">the property value to look for</param>
+            <returns>An edge with a matching property value</returns>
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeT`1.GetPropertyEdges(`0)">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeT`1.GetPropertyEdges(System.IComparable)">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeT`1.GetPropertyEdge(System.IComparable)">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeT`1.GetPropertyValue(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeT`1.RemovePropertyValue(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.PropertyTypeT`1.SetPropertyValue(System.Int32,System.Int32,System.IComparable)">
+            <inheritdoc />
+        </member>
+        <member name="P:VelocityGraph.PropertyTypeT`1.ValueType">
+            <summary>
+            Get the value Type
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.PropertyType">
+            <summary>
+            Keeper of <see cref="T:VelocityGraph.Edge"/> and <see cref="T:VelocityGraph.Vertex"/> properties
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.PropertyType.PropertyId">
+            <summary>
+            Get id of this property type
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.PropertyType.TypeId">
+            <summary>
+            Id of a <see cref="T:VelocityGraph.Vertex"/> or <see cref="T:VelocityGraph.Edge"/>
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.PropertyType.Name">
+            <summary>
+            Get name of this property
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.PropertyType.IsVertexProperty">
+            <summary>
+            Is this a <see cref="T:VelocityGraph.Vertex"/> property, if not then it is an <see cref="T:VelocityGraph.Edge"/> property
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.PropertyType.ValueType">
+            <summary>
+            Get the type of property values for this property
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.PropertyType.GetPropertyVertex(System.IComparable,System.Boolean,System.Boolean)">
+            <summary>
+            Try to find a <see cref="T:VelocityGraph.Vertex"/> with a given property value.
+            </summary>
+            <param name="value">The property value to look for</param>
+            <param name="polymorphic">If true, also look for property value matching vertices of property <see cref="T:VelocityGraph.VertexType"/> sub classes</param>
+            <param name="errorIfNotFound">If true, signal an error if no matching <see cref="T:VelocityGraph.Vertex"/> found</param>
+            <returns>A matching Vertex</returns>
+        </member>
+        <member name="M:VelocityGraph.PropertyType.GetPropertyVertices(System.IComparable,System.Boolean)">
+            <summary>
+            Try to find all <see cref="T:VelocityGraph.Vertex"/> with a given property value.
+            </summary>
+            <param name="value">The property value to look for</param>
+            <param name="polymorphic">If true, also look for property value matching vertices of property <see cref="T:VelocityGraph.VertexType"/> sub classes</param>
+            <returns>Enumeration of matching vertices</returns>
+        </member>
+        <member name="M:VelocityGraph.PropertyType.GetPropertyEdge(System.IComparable)">
+            <summary>
+            Try to find an <see cref="T:VelocityGraph.Edge"/> with a given property value.
+            </summary>
+            <param name="value">the property value to look for</param>
+            <returns>An edge with a matching property value</returns>
+        </member>
+        <member name="M:VelocityGraph.PropertyType.GetPropertyEdges(System.IComparable)">
+            <summary>
+            Try to find all <see cref="T:VelocityGraph.Edge"/> with a given property value.
+            </summary>
+            <param name="value">the property value to look for</param>
+            <returns>An edge with a matching property value</returns>
+        </member>
+        <member name="M:VelocityGraph.PropertyType.GetPropertyValue(System.Int32)">
+            <summary>
+            Get property value of a Vertex/Edge
+            </summary>
+            <param name="elementId">Id of a Vertex/Edge</param>
+            <returns>the property value</returns>
+        </member>
+        <member name="M:VelocityGraph.PropertyType.HasPropertyValue(System.Int32)">
+            <summary>
+            Check if an element has a property value
+            </summary>
+            <param name="elementId">Id of a Vertex/Edge</param>
+            <returns><c>true</c> if element has a property value for this property type</returns>
+        </member>
+        <member name="M:VelocityGraph.PropertyType.SetPropertyValue(System.Int32,System.Int32,System.IComparable)">
+            <summary>
+            Sets a property value for an element
+            </summary>
+            <param name="elementId">Id of a vertex or edge</param>
+            <param name="typeId">Id of vertex/edge</param>
+            <param name="value">Value to assign to property</param>
+        </member>
+        <member name="M:VelocityGraph.PropertyType.RemovePropertyValue(System.Int32)">
+            <summary>
+            Remove a property value
+            </summary>
+            <param name="elementId">Id of an edge/vertex</param>
+            <returns>the value that was assigned prior to removing the property value</returns>
+        </member>
+        <member name="T:VelocityGraph.DataType">
+            <summary>
+            Choose <see cref="T:VelocityDb.IOptimizedPersistable"/> instead of <see cref="T:System.Object"/> for property types where you only will store objects of type IOptimizedPersistable as property value.
+            </summary>
+        </member>
+        <member name="F:VelocityGraph.DataType.Boolean">
+            <summary>
+            Correspond to <see cref="T:System.Boolean"/>
+            </summary>
+        </member>
+        <member name="F:VelocityGraph.DataType.Integer">
+            <summary>
+            Correspond to <see cref="T:System.Int32"/>
+            </summary>
+        </member>
+        <member name="F:VelocityGraph.DataType.Long">
+            <summary>
+            Correspond to <see cref="T:System.Int64"/>
+            </summary>
+        </member>
+        <member name="F:VelocityGraph.DataType.Double">
+            <summary>
+            Correspond to <see cref="T:System.Double"/>
+            </summary>
+        </member>
+        <member name="F:VelocityGraph.DataType.Single">
+            <summary>
+            Correspond to <see cref="F:VelocityGraph.DataType.Single"/>
+            </summary>
+        </member>
+        <member name="F:VelocityGraph.DataType.DateTime">
+            <summary>
+            Correspond to <see cref="T:System.DateTime"/>
+            </summary>
+        </member>
+        <member name="F:VelocityGraph.DataType.String">
+            <summary>
+            Correspond to <see cref="T:System.String"/>
+            </summary>
+        </member>
+        <member name="F:VelocityGraph.DataType.Object">
+            <summary>
+            Correspond to <see cref="T:System.Object"/>
+            </summary>
+        </member>
+        <member name="F:VelocityGraph.DataType.IOptimizedPersistable">
+            <summary>
+            Correspond to <see cref="T:VelocityDb.IOptimizedPersistable"/>
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.PropertyKind">
+            <summary>
+            A property can be index or not or index can require each entry to be unique
+            </summary>
+        </member>
+        <member name="F:VelocityGraph.PropertyKind.Indexed">
+            <summary>
+            Add to index
+            </summary>
+        </member>
+        <member name="F:VelocityGraph.PropertyKind.Unique">
+            <summary>
+            Add to index and require value to be unique
+            </summary>
+        </member>
+        <member name="F:VelocityGraph.PropertyKind.NotIndexed">
+            <summary>
+            Don't index
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.Graph">
+            <summary>
+            Graph is the root object of a graph. Most graph api is on this class but useful api also exist on <see cref="T:VelocityGraph.VertexType"/> and <see cref="T:VelocityGraph.EdgeType"/>.
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.Graph.#ctor(VelocityDb.Session.SessionBase,System.Boolean)">
+            <summary>
+            Creates a new <see cref="T:VelocityGraph.Graph"/>
+            </summary>
+            <param name="session">The active session</param>
+            <param name="vertexIdSetPerVertexType">Set to <see langword="false"/> if you want graph wide unique <see cref="T:VelocityGraph.Vertex"/> ids, by default <see langword="true"/> each <see cref="T:VelocityGraph.VertexType"/> maintains its own set of <see cref="T:VelocityGraph.Vertex"/> ids</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.Open(VelocityDb.Session.SessionBase,System.Int32)">
+            <summary>
+            Opens a graph
+            </summary>
+            <param name="session">session to be associated with the opened graph</param>
+            <param name="graphInstance">if multiple graphs exist, choose which one to open</param>
+            <returns>A graph</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.AddEdge(System.Object,Frontenac.Blueprints.IVertex,Frontenac.Blueprints.IVertex,System.String)">
+            <summary>
+            Add an edge to the graph. The added edges requires a recommended identifier, a tail vertex, an head vertex, and a label.
+            Like adding a vertex, the provided object identifier may be ignored by the implementation.
+            </summary>
+            <param name="id">the recommended object identifier</param>
+            <param name="outVertex">the vertex on the tail of the edge</param>
+            <param name="inVertex">the vertex on the head of the edge</param>
+            <param name="label">the label associated with the edge</param>
+            <returns>the newly created edge</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.AddVertex">
+            <summary>
+            Create a new vertex (of VertexType "default"), add it to the graph, and return the newly created vertex.
+            </summary>
+            <returns>the newly created vertex</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.AddVertex(System.Object)">
+            <summary>
+            Create a new vertex (of VertexType "default"), add it to the graph, and return the newly created vertex.
+            </summary>
+            <param name="id">the recommended object identifier</param>
+            <returns>the newly created vertex</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.GetEdge(System.Object)">
+            <summary>
+            Return the edge referenced by the provided object identifier.
+            If no edge is referenced by that identifier, then return null.
+            </summary>
+            <param name="id">the identifier of the edge to retrieved from the graph</param>
+            <returns>the edge referenced by the provided identifier or null when no such edge exists</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.GetEdgeType(System.Int32)">
+            <summary>
+            Get a <see cref="T:VelocityGraph.EdgeType"/> associated with an <see cref="T:VelocityGraph.Edge"/> id
+            </summary>
+            <param name="id">Id to look for</param>
+            <returns>the associated edge type</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.GetEdges">
+            <summary>
+            Return an iterable to all the edges in the graph.
+            </summary>
+            <returns>an iterable reference to all edges in the graph</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.GetEdges(System.String,System.Object)">
+            <summary>
+            Return an iterable to all the edges in the graph that have a particular key/value property.
+            </summary>
+            <param name="key">the key of the edge</param>
+            <param name="value">the value of the edge</param>
+            <returns>an iterable of edges with provided key and value</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.GetEdges``1(System.String,``0)">
+            <summary>
+            Return an iterable to all the edges in the graph that have a particular key/value property.
+            </summary>
+            <param name="key">the key of the edge</param>
+            <param name="value">the value of the edge</param>
+            <returns>an iterable of edges with provided key and value</returns>
+        </member>
+        <member name="P:VelocityGraph.Graph.Features">
+            <summary>
+            Returns the features of the underlying graph.
+            </summary>
+        </member>
+        <member name="P:VelocityGraph.Graph.Session">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.Graph.Clear">
+            <summary>
+            Removes all edges and vertices from the graph.
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.Graph.CombineIntersection(System.Collections.Generic.HashSet{VelocityGraph.Edge},System.Collections.Generic.HashSet{VelocityGraph.Edge})">
+            <summary>
+            Combines to sets of edges by intersection
+            </summary>
+            <param name="objs1">first set of edges</param>
+            <param name="objs2">second set of edges</param>
+            <returns>Intersection of sets</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.NewVertexType(System.String,VelocityGraph.VertexType)">
+            <summary>
+            Creates a new node type.
+            </summary>
+            <param name="name">Unique name for the new vertex type.</param>
+            <param name="baseType">Base VertexType for the new VertexType.</param>
+            <returns>Unique graph type identifier.</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.NewEdgeType(System.String,System.Boolean,VelocityGraph.EdgeType)">
+            <summary>
+            Creates a new edge type.
+            </summary>
+            <param name="name">Unique name for the new edge type.</param>
+            <param name="biderectional">If true, this creates a biderectional edge type, otherwise this creates a unidirectional edge type.</param>
+            <param name="baseType">Base EdgeType for the new EdgeType.</param>
+            <returns>Unique edge type.</returns>
+            <returns>a new edge type</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.NewEdgeType(System.String,System.Boolean,VelocityGraph.VertexType,VelocityGraph.VertexType,VelocityGraph.EdgeType)">
+            <summary>
+            Creates a new edge type.
+            </summary>
+            <param name="name">Unique name for the new edge type.</param>
+            <param name="biderectional">If true, this creates a biderectional edge type, otherwise this creates a unidirectional edge type.</param>
+            <returns>Unique edge type.</returns>
+            <param name="tailType">a fixed tail VertexType</param>
+            <param name="headType">a fixed head VertexType</param>
+            <param name="baseType">if specified make the new <see cref="T:VelocityGraph.EdgeType"/> a subclass of this <see cref="T:VelocityGraph.EdgeType"/></param>
+            <returns>a new edge type</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.NewVertex(VelocityGraph.VertexType,System.Int32)">
+            <summary>
+            Creates a new node instance.
+            </summary>
+            <param name="vertexType">Node type identifier.</param>
+            <returns>Unique OID of the new node instance.</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.NewVertexProperty(VelocityGraph.VertexType,System.String,VelocityGraph.DataType,VelocityGraph.PropertyKind)">
+            <summary>
+            Creates a new Property. 
+            </summary>
+            <param name="vertexType">Node or edge type identifier.</param>
+            <param name="name">Unique name for the new Property.</param>
+            <param name="dt">Data type for the new Property.</param>
+            <param name="kind">Property kind.</param>
+            <returns>Unique Property identifier.</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.NewEdgeProperty(VelocityGraph.EdgeType,System.String,VelocityGraph.DataType,VelocityGraph.PropertyKind)">
+            <summary>
+            Creates a new Property. 
+            </summary>
+            <param name="edgeType">Node or edge type identifier.</param>
+            <param name="name">Unique name for the new Property.</param>
+            <param name="dt">Data type for the new Property.</param>
+            <param name="kind">Property kind.</param>
+            <returns>Unique Property identifier.</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.NewEdge(VelocityGraph.EdgeType,VelocityGraph.Vertex,VelocityGraph.Vertex)">
+            <summary>
+            Creates a new edge instance.
+            </summary>
+            <param name="edgeType">Edge type identifier.</param>
+            <param name="tail">Source OID.</param>
+            <param name="head">Target OID. </param>
+            <returns>Unique OID of the new edge instance.</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.NewEdge(VelocityGraph.EdgeType,VelocityGraph.PropertyType,System.Object,VelocityGraph.PropertyType,System.Object)">
+            <summary>
+            Creates a new edge instance.
+            The tail of the edge will be any node having the given tailV Value for the given tailAttr Property identifier,
+            and the head of the edge will be any node having the given headV Value for the given headAttr Property identifier. 
+            </summary>
+            <param name="edgeType">Node or edge type identifier.</param>
+            <param name="tailAttr">Property identifier.</param>
+            <param name="tailV">Tail value</param>
+            <param name="headAttr">Property identifier.</param>
+            <param name="headV">Head value</param>
+            <returns>Unique edge instance.</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.Traverse(VelocityGraph.Vertex[],VelocityGraph.EdgeType,Frontenac.Blueprints.Direction)">
+            <summary>
+            Selects all neighbor Vertices from or to each of the node OID in the given collection and for the given edge type.
+            </summary>
+            <param name="vertices">Vertex collection.</param>
+            <param name="etype">Edge type identifier.</param>
+            <param name="dir">Direction.</param>
+            <returns>Dictionary of vertex keys with edges path to vertex</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.FindVertex(VelocityGraph.PropertyType,System.IComparable,System.Boolean)">
+            <summary>
+            Finds vertex having the given value for the given property. 
+            </summary>
+            <param name="property"></param>
+            <param name="v">a value to look for</param>
+            <param name="errorIfNotFound">if <c>true</c>, throw an exception if an error is found</param>
+            <returns>the vertex matching</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.CountVertices">
+            <summary>
+            Get a count of all vertices in this graph
+            </summary>
+            <returns>count of vertices</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.ContainsVertex(System.Int32)">
+            <summary>
+            Returns a value indicating whether a Vertex exists for the specified vertex id.
+            </summary>
+            <param name="vertexId">A Vertex id</param>
+            <returns>Returns <see langword="true"/> if a Vertex exist with specified <paramref name="vertexId"/> is found in this <see cref="T:VelocityGraph.Graph"/>; otherwise, <see langword="false"/>.</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.CountEdges">
+            <summary>
+            Returns a count of all edges in this graph
+            </summary>
+            <returns>the total count of edges in this graph</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.Shutdown">
+            <summary>
+            A shutdown function is required to properly close the graph.
+            This is important for implementations that utilize disk-based serializations.
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.Graph.FindEdgeType(System.String)">
+            <summary>
+            Finds the type id associated with a particular edge type. Lookup by name.
+            </summary>
+            <param name="name">The name of the edge/node type being looked up</param>
+            <returns>A node/edge type id or -1 if not found.</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.FindVertexType(System.String)">
+            <summary>
+            Finds the type id associated with a particular vertexe type. Lookup by name.
+            </summary>
+            <param name="name">The name of the edge/node type being looked up</param>
+            <returns>A node/edge type id or -1 if not found.</returns>
+        </member>
+        <member name="P:VelocityGraph.Graph.ObjectsPerPage">
+            <summary>
+            Place this type of of object on its own page
+            </summary>
+            <returns>
+            The default maximum number of objects per page
+            </returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.FindVertexProperty(VelocityGraph.VertexType,System.String)">
+            <summary>
+            Finds a <see cref="T:VelocityGraph.PropertyType"/> of <see cref="T:VelocityGraph.VertexType"/>.
+            </summary>
+            <param name="vertexType">vertex type with property type</param>
+            <param name="name">a name of a property</param>
+            <returns></returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.Query">
+            <summary>
+            Generate a query object that can be used to fine tune which edges/vertices are retrieved from the graph.
+            </summary>
+            <returns>a graph query object with methods for constraining which data is pulled from the underlying graph</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.RemoveEdge(Frontenac.Blueprints.IEdge)">
+            <summary>
+            Remove the provided edge from the graph.
+            </summary>
+            <param name="edge">the edge to remove from the graph</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.RemovePropertyType(VelocityGraph.PropertyType)">
+            <summary>
+            Removes a property type except if any vertex or edge is using it
+            </summary>
+            <param name="pt">property type to remove</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.RemoveVertex(Frontenac.Blueprints.IVertex)">
+            <summary>
+            Remove the provided vertex from the graph.
+            Upon removing the vertex, all the edges by which the vertex is connected must be removed as well.
+            </summary>
+            <param name="vertex">the vertex to remove from the graph</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.RemoveVertexType(VelocityGraph.VertexType)">
+            <summary>
+            Removes a <see cref="T:VelocityGraph.VertexType"/> from this graph. An exception is thrown if the <see cref="T:VelocityGraph.VertexType"/> is in use.
+            </summary>
+            <param name="type">a <see cref="T:VelocityGraph.VertexType"/> instance</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.Select(VelocityGraph.PropertyType,System.Func{System.IComparable,System.IComparable,System.Boolean},System.IComparable)">
+            <summary>
+            Enumerates all elements satisfying the given condition for the given property and value
+            </summary>
+            <param name="property">Property we are looking for</param>
+            <param name="condition">A filter function, applied with in graph value as 1st parameter and value as second parameter. </param>
+            <param name="value">Filtering value</param>
+            <returns>Enum of IElement</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.Select(VelocityGraph.PropertyType,System.Func{System.IComparable,System.IComparable,System.IComparable,System.Boolean},System.IComparable,System.IComparable)">
+            <summary>
+            numerates all elements satisfying the given condition for the given property and value range
+            </summary>
+            <param name="property">Property we are looking for</param>
+            <param name="condition"> filter function, applied with in graph value as 1st parameter, lower as 2nd and higher as 3rd parameter.</param>
+            <param name="lower">lower value in filtering</param>
+            <param name="higher">higher value in filtering</param>
+            <returns></returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.GetVertex(System.Object)">
+            <summary>
+            Return the vertex referenced by the provided object identifier.
+            If no vertex is referenced by that identifier, then return null.
+            </summary>
+            <param name="id">the identifier of the vertex to retrieved from the graph, must be a UInt64</param>
+            <returns>the vertex referenced by the provided identifier or null when no such vertex exists</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.GetVertex(System.Int32)">
+            <summary>
+            Look up a <see cref="T:VelocityGraph.Vertex"/>
+            </summary>
+            <param name="id">Id of <see cref="T:VelocityGraph.Vertex"/> to lookup</param>
+            <returns>A vertex with the matching id</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.GetVertexType(System.Int32)">
+            <summary>
+            Given a <see cref="T:VelocityGraph.Vertex"/> id, returns the corresponding  <see cref="T:VelocityGraph.Vertex"/>.
+            </summary>
+            <param name="id">Id of a <see cref="T:VelocityGraph.Vertex"/></param>
+            <returns>A <see cref="T:VelocityGraph.VertexType"/> with id. Throws <see cref="T:VelocityGraph.Exceptions.VertexTypeDoesNotExistException"/> if <see cref="T:VelocityGraph.Vertex"/> does not exist</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.GetVertices">
+            <summary>
+            Return an iterable to all the vertices in the graph.
+            </summary>
+            <returns>an iterable reference to all vertices in the graph</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.GetVertices(System.String,System.Object)">
+            <summary>
+            Return an iterable to all the vertices in the graph that have a particular key/value property.
+            </summary>
+            <param name="key">the key of vertex</param>
+            <param name="value">the value of the vertex</param>
+            <returns>an iterable of vertices with provided key and value</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.Edges(VelocityGraph.EdgeType,VelocityGraph.Vertex,VelocityGraph.Vertex)">
+            <summary>
+            Enumerates all the edges of the given type between two given nodes (tail and head).
+            </summary>
+            <param name="etype">Type of Edge</param>
+            <param name="tail">Outgoing Vertex</param>
+            <param name="head">Incoming Vertex</param>
+            <returns>Enumeration of Edge</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.ExportToGraphSon(System.IO.Stream,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},Frontenac.Blueprints.Util.IO.GraphSON.GraphSonMode)">
+            <summary>
+                Write the data in a Graph to a GraphSon JSON OutputStream.
+            </summary>
+            <param name="jsonOutputStream">the JSON OutputStream to write the Graph data to</param>
+            <param name="vertexPropertyKeys">the keys of the vertex elements to write to JSON</param>
+            <param name="edgePropertyKeys">the keys of the edge elements to write to JSON</param>
+            <param name="mode">determines the format of the GraphSON</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.ExportToGraphSon(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},Frontenac.Blueprints.Util.IO.GraphSON.GraphSonMode)">
+            <summary>
+                Write the data in a Graph to a GraphSon JSON OutputStream.
+            </summary>
+            <param name="filename">the JSON file to write the Graph data to</param>
+            <param name="vertexPropertyKeys">the keys of the vertex elements to write to JSON</param>
+            <param name="edgePropertyKeys">the keys of the edge elements to write to JSON</param>
+            <param name="mode">determines the format of the GraphSON</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.ImportGraphSon(System.String)">
+            <summary>
+            Input the GraphSon JSON stream data into the graph.
+            In practice, usually the provided graph is empty.
+            </summary>
+            <param name="filename">name of a file of JSON data</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.ImportGraphSon(System.IO.Stream,System.Int32)">
+            <summary>
+            Input the GraphSon JSON stream data into the graph.
+            In practice, usually the provided graph is empty.
+            </summary>
+            <param name="jsonInputStream">an Stream of JSON data</param>
+            <param name="bufferSize">the amount of elements to hold in memory before committing a transactions</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.ExportToGraphJson(System.String)">
+            <summary>
+                Write the data in a Graph to a GraphJson JSON OutputStream.
+            </summary>
+            <param name="filename">the JSON file to write the Graph data to</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.ExportToGraphJson(System.String,VelocityGraph.GraphJsonSettings)">
+            <summary>
+                Write the data in a Graph to a GraphJson JSON OutputStream.
+            </summary>
+            <param name="filename">the JSON file to write the Graph data to</param>
+            <param name="settings">Contains field names that the writer will use to map to BluePrints</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.ExportToGraphJson(System.IO.Stream)">
+            <summary>
+                Write the data in a Graph to a GraphJson JSON OutputStream.
+            </summary>
+            <param name="jsonOutputStream">the OutputStream to write to</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.ExportToGraphJson(System.IO.Stream,VelocityGraph.GraphJsonSettings)">
+            <summary>
+                Write the data in a Graph to a GraphJson JSON OutputStream.
+            </summary>
+            <param name="jsonOutputStream">the OutputStream to write to</param>
+            <param name="settings">Contains field names that the writer will use to map to BluePrints</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.ImportGraphJson(System.String)">
+            <summary>
+            Input the GraphJson JSON stream data into the graph.
+            In practice, usually the provided graph is empty.
+            </summary>
+            <param name="filename">name of a file of JSON data</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.ImportGraphJson(System.IO.Stream,System.Int32)">
+            <summary>
+            Input the GrapJson JSON stream data into the graph.
+            In practice, usually the provided graph is empty.
+            </summary>
+            <param name="grapJsonInputStream">an Stream of GraphJson JSON data</param>
+            <param name="bufferSize">the amount of elements to hold in memory before committing a transactions</param>
+        </member>
+        <member name="M:VelocityGraph.Graph.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.Graph.FindVertexTypes">
+            <summary>
+            Get an array of all vertex types in this graph
+            </summary>
+            <returns>an array of vertex types</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.FindEdgeTypes">
+            <summary>
+            Get an array of all edge types in this graph
+            </summary>
+            <returns>an array of edge types</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.GetValues(VelocityGraph.PropertyType)">
+            <summary>
+            Enumerates all the values for the given vertex/edge property
+            </summary>
+            <param name="property">Edge or Vertex property</param>
+            <returns>Enumeration of property values</returns>
+        </member>
+        <member name="M:VelocityGraph.Graph.Persist(VelocityDb.Placement,VelocityDb.Session.SessionBase,System.Boolean,System.Boolean,System.Collections.Generic.Queue{VelocityDb.IOptimizedPersistable})">
+            <inheritdoc />
+        </member>
+        <member name="M:VelocityGraph.Graph.Unpersist(VelocityDb.Session.SessionBase)">
+            <inheritdoc />
+        </member>
+        <member name="P:VelocityGraph.Graph.VertexIdSetPerType">
+            <summary>
+            <c>true</c> if using a vertex id set per type. Decided by constructor parameter when creating a <see cref="T:VelocityGraph.Graph"/>
+            </summary>
+        </member>
+        <member name="T:VelocityGraph.GraphJsonWriter">
+            <summary>
+                GraphJsonWriter writes a Graph to a GraphJson OutputStream. 
+            </summary>
+        </member>
+        <member name="M:VelocityGraph.GraphJsonWriter.OutputGraph(Frontenac.Blueprints.IGraph,System.String)">
+            <summary>
+                Write the data in a Graph to a GraphJson OutputStream.
+            </summary>
+            <param name="filename">the JSON file to write the Graph data to</param>
+            <param name="graph">the graph to serialize</param>
+        </member>
+        <member name="M:VelocityGraph.GraphJsonWriter.OutputGraph(Frontenac.Blueprints.IGraph,System.String,VelocityGraph.GraphJsonSettings)">
+            <summary>
+                Write the data in a Graph to a GraphJson OutputStream.
+            </summary>
+            <param name="filename">the JSON file to write the Graph data to</param>
+            <param name="graph">the graph to serialize</param>
+            <param name="settings">Contains field names that the writer will use to map to BluePrints</param>
+        </member>
+        <member name="M:VelocityGraph.GraphJsonWriter.OutputGraph(Frontenac.Blueprints.IGraph,System.IO.Stream)">
+            <summary>
+                Write the data in a Graph to a GraphJson OutputStream.
+            </summary>
+            <param name="jsonOutputStream">the OutputStream to write to</param>
+            <param name="graph">the graph to serialize</param>
+        </member>
+        <member name="M:VelocityGraph.GraphJsonWriter.OutputGraph(Frontenac.Blueprints.IGraph,System.IO.Stream,VelocityGraph.GraphJsonSettings)">
+            <summary>
+                Write the data in a Graph to a GraphJson OutputStream.
+            </summary>
+            <param name="jsonOutputStream">the OutputStream to write to</param>
+            <param name="graph">the graph to serialize</param>
+            <param name="settings">Contains field names that the writer will use to map to BluePrints</param>
+        </member>
+        <member name="M:VelocityGraph.GraphJsonWriter.JsonFromElement(Frontenac.Blueprints.IElement,VelocityGraph.GraphJsonSettings)">
+            <summary>
+                Creates GraphJson for a single graph element.
+            </summary>
+        </member>
+    </members>
+</doc>

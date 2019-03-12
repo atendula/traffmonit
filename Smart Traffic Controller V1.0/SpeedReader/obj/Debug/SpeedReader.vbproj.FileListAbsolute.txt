@@ -1,0 +1,155 @@
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\SpeedReader.exe.config
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\SpeedReader.exe
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\SpeedReader.pdb
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\SpeedReader.xml
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\Castle.Core.dll
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\Frontenac.Blueprints.dll
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\Frontenac.Gremlinq.dll
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\log4net.dll
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\Newtonsoft.Json.dll
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\Shields.GraphViz.dll
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\System.Collections.Immutable.dll
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\VelocityDb.dll
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\VelocityGraph.dll
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\log4net.xml
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\Newtonsoft.Json.pdb
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\Newtonsoft.Json.xml
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\Shields.GraphViz.xml
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\System.Collections.Immutable.xml
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\VelocityDb.xml
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\VelocityGraph.pdb
+F:\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\VelocityGraph.xml
+F:\Projects\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.vbprojResolveAssemblyReference.cache
+F:\Projects\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Form1.resources
+F:\Projects\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Resources.resources
+F:\Projects\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.vbproj.GenerateResource.Cache
+F:\Projects\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.exe
+F:\Projects\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.xml
+F:\Projects\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.pdb
+C:\Users\EL Pepe\OneDrive\Projects\SerialReader\SpeedReader\SpeedReader\bin\Debug\SpeedReader.exe.config
+C:\Users\EL Pepe\OneDrive\Projects\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.exe
+C:\Users\EL Pepe\OneDrive\Projects\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.xml
+C:\Users\EL Pepe\OneDrive\Projects\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.pdb
+F:\STANDALONE CHANGE\SerialReader\SpeedReader\SpeedReader\bin\Debug\SpeedReader.exe.config
+F:\STANDALONE CHANGE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.exe
+F:\STANDALONE CHANGE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.xml
+F:\STANDALONE CHANGE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.pdb
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\SpeedReader.exe.config
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.exe
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.xml
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.pdb
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\SpeedReader.exe
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\SpeedReader.pdb
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\SpeedReader.xml
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\Castle.Core.dll
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\Frontenac.Blueprints.dll
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\Frontenac.Gremlinq.dll
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\log4net.dll
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\Newtonsoft.Json.dll
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\Shields.GraphViz.dll
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\System.Collections.Immutable.dll
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\VelocityDb.dll
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\VelocityGraph.dll
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\log4net.xml
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\Newtonsoft.Json.pdb
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\Newtonsoft.Json.xml
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\Shields.GraphViz.xml
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\System.Collections.Immutable.xml
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\VelocityDb.xml
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\VelocityGraph.pdb
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\bin\Debug\VelocityGraph.xml
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.vbprojResolveAssemblyReference.cache
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Form1.resources
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.GUIServer.resources
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.ModeSelector.resources
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Resources.resources
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Porta.resources
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Presenter.resources
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.vbproj.GenerateResource.Cache
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Logger.resources
+D:\STANDALONE\SerialReader\SpeedReader\SpeedReader\obj\Debug\SpeedReader.deviceWindow.resources
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\SpeedReader.exe.config
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.exe
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.xml
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.pdb
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\SpeedReader.exe
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\SpeedReader.pdb
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\SpeedReader.xml
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Castle.Core.dll
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Frontenac.Blueprints.dll
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Frontenac.Gremlinq.dll
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\log4net.dll
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Shields.GraphViz.dll
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\VelocityDb.dll
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\VelocityGraph.dll
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\log4net.xml
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Shields.GraphViz.xml
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\VelocityDb.xml
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\VelocityGraph.pdb
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\VelocityGraph.xml
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.vbprojResolveAssemblyReference.cache
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.codeSend.resources
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.deviceWindow.resources
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Form1.resources
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.GUIServer.resources
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Logger.resources
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.ModeSelector.resources
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Resources.resources
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Porta.resources
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Presenter.resources
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.vbproj.GenerateResource.Cache
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\SpeedReader.exe.config
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.exe
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.xml
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.pdb
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\SpeedReader.exe
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\SpeedReader.pdb
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\SpeedReader.xml
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Castle.Core.dll
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Frontenac.Blueprints.dll
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Frontenac.Gremlinq.dll
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\log4net.dll
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Newtonsoft.Json.dll
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Shields.GraphViz.dll
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\System.Collections.Immutable.dll
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\VelocityDb.dll
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\VelocityGraph.dll
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\log4net.xml
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Newtonsoft.Json.xml
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\Shields.GraphViz.xml
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\System.Collections.Immutable.xml
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\VelocityDb.xml
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\VelocityGraph.pdb
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\bin\Debug\VelocityGraph.xml
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.codeSend.resources
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.deviceWindow.resources
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.GUIServer.resources
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.ModeSelector.resources
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Resources.resources
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Porta.resources
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Presenter.resources
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.vbproj.GenerateResource.Cache
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\Interop.Office.dll
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.vbproj.ResolveComReference.cache
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.speedLogger.resources
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\Interop.Office.dll
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.vbproj.ResolveComReference.cache
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.speedLogger.resources
+C:\Users\Alvaro Tendula\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.SysMonitor.resources
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.Dialog1.resources
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.SysMonitor.resources
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.vbprojResolveAssemblyReference.cache
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.ZoneManagerGUI.resources
+C:\Users\EL Pepe\OneDrive\Projects\Server APP\SpeedReader\SpeedReader\obj\Debug\SpeedReader.SerialReader.resources
+C:\Users\Alvaro Tendula\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\SpeedReader.exe.config
+C:\Users\Alvaro Tendula\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\Interop.Office.dll
+C:\Users\Alvaro Tendula\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.vbproj.ResolveComReference.cache
+C:\Users\Alvaro Tendula\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.exe
+C:\Users\Alvaro Tendula\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.xml
+C:\Users\Alvaro Tendula\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.pdb

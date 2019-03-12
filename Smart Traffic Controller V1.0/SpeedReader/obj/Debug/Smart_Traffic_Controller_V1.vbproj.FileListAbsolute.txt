@@ -1,0 +1,80 @@
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\SpeedReader.exe.config
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\Interop.Office.dll
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\Smart_Traffic_Controller_V1.vbproj.ResolveComReference.cache
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.exe
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.xml
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.pdb
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\SpeedReader.exe
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\SpeedReader.pdb
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\SpeedReader.xml
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Castle.Core.dll
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Frontenac.Blueprints.dll
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Frontenac.Gremlinq.dll
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\log4net.dll
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Newtonsoft.Json.dll
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Shields.GraphViz.dll
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\System.Collections.Immutable.dll
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\VelocityDb.dll
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\VelocityGraph.dll
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\log4net.xml
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Newtonsoft.Json.xml
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Shields.GraphViz.xml
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\System.Collections.Immutable.xml
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\VelocityDb.xml
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\VelocityGraph.pdb
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\VelocityGraph.xml
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\Smart_Traffic_Controller_V1.vbprojResolveAssemblyReference.cache
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.codeSend.resources
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.deviceWindow.resources
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.Dialog1.resources
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.SerialReader.resources
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.GUIServer.resources
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.SysMonitor.resources
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.ModeSelector.resources
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.Resources.resources
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.Porta.resources
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.Presenter.resources
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.speedLogger.resources
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.ZoneManagerGUI.resources
+C:\Users\EL Pepe\OneDrive\Projects\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\Smart_Traffic_Controller_V1.vbproj.GenerateResource.Cache
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\SpeedReader.exe.config
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\Interop.Office.dll
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\Smart_Traffic_Controller_V1.vbproj.ResolveComReference.cache
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.exe
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.xml
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.pdb
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\SpeedReader.exe
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\SpeedReader.pdb
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\SpeedReader.xml
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Castle.Core.dll
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Frontenac.Blueprints.dll
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Frontenac.Gremlinq.dll
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\log4net.dll
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Newtonsoft.Json.dll
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Shields.GraphViz.dll
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\System.Collections.Immutable.dll
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\VelocityDb.dll
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\VelocityGraph.dll
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\log4net.xml
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Newtonsoft.Json.pdb
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Newtonsoft.Json.xml
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\Shields.GraphViz.xml
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\System.Collections.Immutable.xml
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\VelocityDb.xml
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\VelocityGraph.pdb
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\bin\Debug\VelocityGraph.xml
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\Smart_Traffic_Controller_V1.vbprojResolveAssemblyReference.cache
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.codeSend.resources
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.deviceWindow.resources
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.Dialog1.resources
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.SerialReader.resources
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.GUIServer.resources
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.SysMonitor.resources
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.ModeSelector.resources
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.Resources.resources
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.Porta.resources
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.Presenter.resources
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.speedLogger.resources
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\SpeedReader.ZoneManagerGUI.resources
+D:\github_local\Phase 1 Backup\Smart Traffic Controller V1.0\SpeedReader\obj\Debug\Smart_Traffic_Controller_V1.vbproj.GenerateResource.Cache

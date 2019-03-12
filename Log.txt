@@ -1,0 +1,30 @@
+Current State of Phase 1:
+
+IR and PIR clients:
+-	Delay that caused light counter to freeze has been removed
+-	Error loading default values have been removed
+-	Added limiters to block wrong values from being sent to the server
+-	Hardware error that caused the pir sensor to not work was fixed: bad wire connection. Also, when reconnecting wires to the board, best practice to connect ground wire first
+
+Client Emulator:
+-	No changes
+-	Just a simple tcp client made to test the server’s acceptance of new clients
+
+SysMonitor:
+-	Zone sync not yet implemented
+-	Works fine with two clients
+-	Problem that caused the application to consume >50% processor resources has been removed (must always use thread. Sleep)
+-	Problem that freezes DataGrid when amount of data is greater than the limit still needs to be fixed
+-	GraphViewer still has to be implemented
+
+Phase (Phase 2) Changes: Yet to Implement
+
+-	Implement Zone Sync
+-	Implement Database Connection
+-	Resolve DataGrid freeze
+-	Implement Zone monitor window
+
+Phase 3: Yet to Implement
+
+-	Connect Clients to Cloud
+-	Create a online webpage using node-red for management of clients to prove system scalability
