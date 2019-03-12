@@ -19,3 +19,9 @@ The objective of this project is to create a system that is capable of monitorin
 1x Power source module for Arduino
 
 2x Arduino Ethernet Shield (can be replaced by an Wi-fi shield)
+
+## Operation
+
+This project is an extention of a capstone project from a coursera specialization and its report can be found here :
+
+https://docs.google.com/document/d/1Y7LnDXgcX5rniguh6w1Fpngl3rmgdg5aGsMN7LHpNGs/edit?usp=sharing
